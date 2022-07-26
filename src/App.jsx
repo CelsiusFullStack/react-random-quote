@@ -15,7 +15,9 @@ function App() {
   <div className="App" style={objAppStyle} >
     <div className='container__main'>
       <QuoteBox cardInfo= {randomQuote}  />
-      <div className='container__button' ><Button Buttons={changeQuote}/></div>
+      <div className='container__button'  >
+           <Button Buttons={changeQuote} buttonColor={colors[randomColor]} />
+      </div>
     </div>
   </div>     
   )
